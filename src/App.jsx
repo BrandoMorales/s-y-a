@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Lozas from "./components/Lozas";
@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
 
       <Routes>
@@ -15,8 +15,8 @@ function App() {
         <Route path="/lozas" element={<Lozas />} />
         <Route path="/zapata" element={<Zapata />} />
       </Routes>
-        <Footer /> 
-    </BrowserRouter>
+        <Footer />
+    </HashRouter>
   );
 }
 
